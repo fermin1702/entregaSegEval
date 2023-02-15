@@ -55,7 +55,7 @@ main {
 }
 
 .nav2 a:hover {
-    color: blue;
+    color: white;
 }
 
 section {
@@ -69,7 +69,6 @@ footer {
     float: left;
     height: 100%w;
     width: 100%;
-    background-image: url(/imagenes/logo\ gijon.png);
 }
 
 h3 {
@@ -78,4 +77,24 @@ h3 {
 
 ul {
     list-style: none;
+}
+
+.top {
+    position: sticky;
+    bottom: 20px;
+    margin-left: 40%;
+    margin-top: 100vh;
+
+    padding: 10px;
+    color: #fff;
+    background: #000;
+    border-radius: 100px;
+}
+
+table,
+th,
+tr,
+td {
+    border: solid 2px;
+    margin: 0px;
 }
