@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="estilos/estilosGijon.css">
+  <title>El Molinón</title>
+</head>
+
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <section class="logo">
+      <img src="imagenes/logo gijon.png" alt="logo de Gijon">
+      <h1>Gijon y Alrededores</h1>
+      <img src="imagenes/logo gijon.png" alt="logo de Gijon">
+    </section>
+
+    <!-- MENÚ DE NAVEGACIÓN PRINCIPAL -->
+    <nav class="nav1">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="gijon.html" class="nav-link">Gijon</a>
+      <a href="laLaboral.html" class="nav-link">El Molinón</a>
+      <a href="#" class="nav-link">Otros</a>
+      <a href="contacto.html" class="nav-link">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- TODA LA INFO DEL SITIO -->
+  <main>
+    <h1>El Molinón</h1>
+
+    <!-- MENÚ DE NAVEGACIÓN SECUNDARIO -->
+    <section class="cuerpo">
+      <section>
+        <nav class="nav2">
+          <h2>Indice</h2>
+          <ul class="ul1">
+            <li><a href="#historia" class="nav-link">1. Historia</a></li>
+            <br>
+            <li><a href="#sectores" class="nav-link">2. Sectores del Estadio</a></li>
+            <br>
+            <li><a href="#partidos" class="nav-link">3. Partidos</a>
+              <ul>
+                <li><a href="#seleccion" class="nav-link">3.1. Selección</a></li>
+                <li><a href="#mundial" class="nav-link">3.2. Copa Mundial de 1982</a></li>
+              </ul>
+            </li>
+            <br>
+            <li><a href="#conciertos" class="nav-link">4. Conciertos</a></li>
+            <br>
+            <li><a href="#bajos" class="nav-link">5. Bajos comerciales</a></li>
+            <br>
+          </ul>
+        </nav>
+
+        <!-- MENÚ SUSCRIPCIÓN -->
+        <h2>Suscripción</h2>
+        <form action="/action_page.php" novalidate="">
+          <fieldset>
+            <p>Si quieres recibir una notificacion por correo electronico sobre nuevas publiaciones por favor relle el siguiente formulario:</p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre"><br><br>
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"><br><br>
+            <label for="email">Correo electronico:</label><br>
+            <input type="email" id="email" name="email" placeholder="Email"><br><br>
+            <label for="quantity">Edad:</label><br>
+            <input type="number" id="edad" name="edad" min="18" max="150" step="1" placeholder="30"><br><br>
+            <button type="button" name="enviar_formulario">
+              <p>Enviar</p>
+            </button>
+          </fieldset>
+        </form>
+
+        <!-- MENÚ ENTRADAS -->
+        <h2>Entradas</h2>
+        <form action="/action_page.php" novalidate="">
+          <fieldset>
+            <label for="sector">Elige el sector:</label><br>
+
+            <select id="sector" name="sector" size="3">
+              <option value="Grada norte">Grada norte</option>
+              <option value="Esquina norte">Esquina norte</option>
+              <option value="Tribuna norte">Tribuna norte</option>
+              <option value="Esquina sur">Esquina sur</option>
+              <option value="Grada este">Grada este</option>
+              <option value="Tribuna este">Tribuna este</option>
+              <option value="Tribuna oeste">Tribuna oeste</option>
+              <option value="Esquina sur">Tribuna oeste alta</option>
+              <option value="Esquina sur">Esquina sur</option>
+            </select><br>
+
+            <p>Elige la calidad de tu entrada:</p>
+
+            <input type="radio" id="estandar" name="entrada" value="estandar">
+            <label for="estandar">Entrada estandar</label>
+            <br>
+
+            <input type="radio" id="VIP" name="entrada" value="VIP">
+            <label for="VIP">Entrada VIP</label>
+            <br>
+
+            <input type="radio" id="VIP especial" name="entrada" value="VIP especial">
+            <label for="VIP especial">Entrada VIP especial</label>
+            <br>
+            <br>
+
+            <button type="button" name="enviar_formulario">
+              <p>Enviar</p>
+            </button>
+          </fieldset>
+        </form>
+
+        <!-- MENÚ SOCIOS -->
+        <h2>Socios</h2>
+        <form action="/action_page.php" novalidate="">
+          <fieldset>
+            <div>
+              <label for="nombresocio">Nombre:</label><br>
+              <input type="text" id="nombresocio" name="nombresocio" placeholder="Nombre"><br><br>
+              <label for="apellidosocio">Apellidos:</label><br>
+              <input type="text" id="apellidosocio" name="apellidosocio" placeholder="Apellidos"><br><br>
+              <label for="emailsocio">Correo electronico:</label><br>
+              <input type="email" id="emailsocio" name="emailsocio" placeholder="Email"><br>
+              <br>
+              <label for="socio">Numero de socio:</label><br>
+              <input type="tel" id="socio" name="socio" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required=""><br><br>
+              <label for="birthday">Introduce tu fecha de nacimiento:</label><br>
+              <input type="date" id="birthday" name="birthday"><br>
+              <br>
+              <label for="myfile">Inserte una foto de su carnet de socio:</label><br>
+              <input type="file" id="dnifoto" name="dnifoto"><br><br>
+              <label for="sector">Elige el sector:</label><br>
+              <select name="sector" size="3">
+                <option value="Grada norte">Grada norte</option>
+                <option value="Esquina norte">Esquina norte</option>
+                <option value="Tribuna norte">Tribuna norte</option>
+                <option value="Esquina sur">Esquina sur</option>
+                <option value="Grada este">Grada este</option>
+                <option value="Tribuna este">Tribuna este</option>
+                <option value="Tribuna oeste">Tribuna oeste</option>
+                <option value="Esquina sur">Tribuna oeste alta</option>
+                <option value="Esquina sur">Esquina sur</option>
+              </select><br><br>
+              <button type="button" name="enviar_formulario">
+                <p>Enviar</p>
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+
+      <!-- CONTENIDO-->
+      <div>
+        <!-- SECCION 1-->
+        <section>
+          <h2>Historia</h2>
+
+          <article id="historia">
+            <p>El Molinón era una finca propiedad de Julius Rimmel, nieto de Eugène Rimmel, que se llamaba así por estar al lado de un molino hidráulico de gran tamaño que se erigía en la zona, donde actualmente de ubica el Parador Nacional Molino Viejo. En el Diccionario toponímico del concejo de Gijón de Ramón d'Andrés, publicado por el Ayuntamiento de Gijón en 2008, se puede leer acerca del origen del nombre de El Molinón:
+            </p>
+            <blockquote>
+              El Molinón designa, ante todo, un viejo molino que existió en este lugar, movido por las aguas de un riachuelo llamado El Molín, afluente del Piles. En el siglo xix formó parte de las instalaciones de la fábrica de harina «La Hormiga», fundada por Romualdo Alvargonzález. El lugar quedó abandonado cuando esta industria desapareció. En los años 70 del siglo xx el lugar se restauró y recuperó, dando lugar al actual «Parador Nacional del Molino Viejo». El nombre de El Molinón se aplicó también a sitios cercanos: la avenida del Molinón (l'avenida'l Molinón) y el campo del Molinón (el campu'l Molinón), estadio de fútbol del Real Sporting, que ya se usaba como tal desde comienzos del siglo xx, inaugurándose oficialmente en 1917; pasó a titularidad del Ayuntamiento en 1944. Además, El Molinón designa toda una zona de la ciudad que tiene como referencia el emplazamiento del antiguo molino y el actual estadio de fútbol.
+            </blockquote>
+            <p>
+              No se conoce con exactitud su fecha de construcción y la primera constancia documental de su existencia aparece en las páginas del diario local El Comercio el 20 de mayo de 1908, como referencia a un partido de fútbol disputado entre las sociedades La Bella Sportiva y El Balón tres días antes. La reseña de ese encuentro no lo presenta como algo excepcional, lo que podría indicar que la existencia del estadio es anterior. Este hecho lo convierte en el más antiguo de España.
+            </p>
+            <blockquote>
+              El último domingo, en el campo del Molinón, jugaron un mach de foot-ball, los equipos de las Sociedades sportivas «La Bella Sportiva» y «El Balón», saliendo vencedora la primera, por un soberbio goal admirablemente hecho por el joven Samuel Díaz.
+            </blockquote>
+            <p>
+              A comienzos de la década de 1910 era utilizado por el Gijón Sport Club como terreno para la disputa de los partidos y campeonatos que organizaba, y desde 1913 existen referencias de su uso por parte del Real Sporting de Gijón, entonces denominado Sporting Gijonés. El primer encuentro de competición nacional se disputó el 22 de abril de 1917 entre el Sporting y el Arenas Club; correspondía a la primera eliminatoria del Campeonato de España y venció el Arenas por 0-1. Ese mismo año se introdujeron diversas mejoras en el campo: la construcción de una nueva tribuna, el levantamiento de una empalizada de madera y la instalación de una puerta principal. La conclusión de las mismas se celebró el 5 de agosto con un acto que incluía actividades culturales y deportivas, como un partido de fútbol entre los veintidós mejores jugadores de la sociedad.
+
+            </p>
+            <p>
+              El 2 de mayo de 1920 se jugó en El Molinón la final del Campeonato de España entre el Athletic Club y el F. C. Barcelona, en la que el equipo catalán se proclamó campeón del torneo por cuarta vez tras vencer por 2-0. El 20 de noviembre de 1924, el club lo adquirió en propiedad a Dionisio Cifuentes, su arrendador, por 40.000 pesetas. Entre marzo y abril de 1928 se acometieron nuevas reformas con motivo de la celebración de un partido amistoso entre España e Italia, el primero entre selecciones nacionales que tuvo lugar en El Molinón. La gradería con la que contaba el estadio se trasladó a uno de los fondos y se construyeron dos nuevas tribunas, una general y otra de preferencia, con las que se alcanzó una capacidad para albergar a 15 000 espectadores. La reforma se llevó a cabo por el arquitecto municipal Miguel García de la Cruz. El encuentro internacional tuvo lugar el 22 de abril y finalizó con el resultado de 1-1. Poco más de tres años después, el 27 de septiembre de 1931, la tribuna principal quedó destruida en dos terceras partes a causa de un incendio ocurrido tras el partido del Campeonato Regional que enfrentó al Sporting y al Racing de Santander. Dada la precaria situación económica del Sporting y los costes de la reconstrucción, el club lo vendió al Ayuntamiento en 1935. En diciembre de 1968 se instalaron cuatro torretas que dotaron al estadio de luz artificial, indispensable para la disputa de partidos por las noches. El primer partido disputado con iluminación artificial enfrentó al Sporting y al C. D. Mestalla.
+            </p>
+            <p>
+              El 30 de noviembre de 1969 se inauguraron las cubiertas de las gradas general y sur, que convirtieron a El Molinón en el primer campo de fútbol de España con todas las gradas cubiertas. El 8 de febrero de 1970 se produjo la primera retransmisión en directo por televisión desde El Molinón: un encuentro entre el Sporting y el C. A. Osasuna; también fue este el primer partido de Segunda División en ser ofrecido en directo por televisión, y el primero televisado en Asturias. Ganó el Sporting por 3-0, con dos goles de Marañón y uno de Herrero II.
+            </p>
+            <p>
+              El 25 de noviembre de 1979, en un partido disputado entre el Sporting y el Real Madrid C. F., se generó en la grada de El Molinón uno de los gritos más populares del fútbol español: el Así, así, así gana el Madrid, un cántico que se ha hecho famoso para criticar las supuestas ayudas arbitrales al club blanco y que, posteriormente, adoptaron los seguidores madridistas para celebrar las victorias de su equipo. A los siete minutos de aquel partido, una entrada de San José a Ferrero quedó sin sanción y, al hacerle el rojiblanco un gesto despectivo al madridista, el árbitro del encuentro, Ausocúa Sanz, expulsó al sportinguista.
+            </p>
+            <p>
+              Con motivo de las obras para la Copa Mundial de 1982 se afrontó una gran reforma. Se elevaron las gradas este y sur, y se alcanzó un aforo de casi 45 000 espectadores; 16 600 de ellos, sentados. Sin embargo, dos años después del campeonato del mundo, la Consejería de Comercio e Industria determinó reducir, por motivos de seguridad, la capacidad de El Molinón a 38 000 espectadores. El 25 de junio de 1982 se disputó en El Molinón el último partido del grupo B de la primera ronda de la competición, entre las selecciones Alemania y Austria; los alemanes, tras su derrota ante Argelia en el primer partido, necesitaban ganar para clasificarse para la segunda ronda, mientras que los austriacos se clasificaban aunque perdiesen por 1-0, ya que se producía un empate a cuatro puntos entre Alemania, Austria y Argelia, que clasificaba a los dos primeros por diferencia de goles. Y eso fue lo que ocurrió. Tras el primer gol alemán, obra de Hrubesch en el minuto 10, el partido se convirtió en una pachanga entre dos rivales que lo único que querían era que pasara el tiempo y clasificarse para la siguiente fase. La FIFA inició una investigación sobre los hechos pero no pudo llegar a ninguna conclusión. Eso sí, para evitar más problemas en la siguiente edición de la Copa del Mundo, México 1986, se estableció que en la última jornada de la primera fase se jugaran los dos partidos de cada grupo simultáneamente, como se sigue haciendo en la actualidad. Al día siguiente, la prensa local publicó la crónica del partido en la sección de Sucesos, refiriéndose a él como una estafa a 40 000 personas.
+            </p>
+            <p>
+              Entre 1997 y 1998 también se realizaron obras en el campo para adecuarlo a las normativas de seguridad que marcaron la UEFA y la FIFA para los estadios de fútbol profesional. De esta forma, se hicieron todas las localidades de asiento y se retiraron las vallas de seguridad, pasando a una capacidad de 25 885 espectadores. También se dividieron las gradas en sectores independientes y se instalaron cámaras de seguridad. En 2006, se anunció un nuevo proyecto de remodelación integral del estadio que afectaba, entre otras cosas, a la imagen exterior del mismo, en la que colaboró el artista Joaquín Vaquero Turcios. La reforma se financió, por una parte, con la privatización de los locales existentes bajo las tribunas, ya que una empresa los explota comercialmente y, por la otra, con fondos municipales. En el proyecto se incluyó el refuerzo de la estructura de todo el estadio, la ampliación del fondo norte y una zona de la tribuna oeste, el cambio de todas la cubiertas del estadio, la creación de nuevos vestuarios y zonas mixtas para prensa, radio y televisión, además de una sala para entrevistas. También se sustituyeron todos los asientos para el público, que pasaron de tener una disposición en la que formaban franjas verticales rojas y blancas a otra en degradado: hay una mayor presencia de butacas rojas cerca del terreno de juego, mientras que el número de asientos blancos aumenta a medida que se asciende por el graderío.
+            </p>
+            <p>
+              Con todas estas mejoras, el estadio dio un cambio radical en su aspecto exterior y en todas sus dotaciones, y fue homologado con la categoría 3 por la UEFA. Además, el aforo total aumentó hasta los 30 000 espectadores.
+            </p>
+            <p>
+              El 28 de febrero de 2018, un día después del fallecimiento de Quini, el Ayuntamiento de Gijón aprobó por unanimidad cambiar su denominación oficial a Estadio Municipal El Molinón-Enrique Castro "Quini" como homenaje a su figura.
+            </p>
+            <p>
+              El 25 de junio de 2022 el estadio fue el escenario, por primera vez en sus más de 110 años de historia, de un partido de rugby, en el que se enfrentaron la selección nacional de España, conocida como el XV del León y el combinado internacional Barbarian F.C. El encuentro finalizó 27-6, victoria de los Barbarian.
+            </p>
+            <p>
+              En 2022, el nuevo propietario del Real Sporting, el mexicano Grupo Orlegi, propone la reconstrucción del estadio de cara a la candidatura hispano-lusa-ucraniana al Mundial de fútbol de 2030. En su estudio inicial presentan la construcción de un nuevo recinto de 300 millones de € y la conversión total del espacio circundante en zonas verdes.
+            </p>
+          </article>
+        </section>
+
+        <!-- SECCION 2-->
+        <section>
+          <h2>Sectores del estadio</h2>
+
+          <article id="sectores">
+            <p>
+              El Molinón tiene 29 035 asientos —sin contar los palcos vip, presidencial y de prensa, ni la zona de minusválidos— repartidos en diez graderíos principales, que a su vez están divididos en sectores:
+            </p>
+            <ul>
+              <li>Tribuna oeste alta</li>
+              <li>Tribuna oeste</li>
+              <li>Tribuna este</li>
+              <li>Grada este</li>
+              <li>Tribuna norte</li>
+              <li>Grada norte</li>
+              <li>Tribuna sur</li>
+              <li> Grada sur (donde se ubica la grada de animación "Grada 1908" para menores de 26 años)</li>
+              <li>Esquina norte</li>
+              <li>Esquina sur</li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- SECCION 3-->
+        <section id="partidos">
+          <h2>Partidos internacionales</h2>
+
+          <article id="seleccion">
+            <h3>Seleccion española</h3>
+            <p>
+              La selección española ha disputado once partidos en El Molinón, lo que convierte a Gijón en la quinta ciudad del país que más encuentros del combinado nacional ha albergado, con siete partidos amistosos y cuatro de competición oficial: tres clasificatorios para una Copa del Mundo y uno para una Eurocopa.
+            </p>
+            <table id="tabla">
+              <tbody>
+                <tr>
+                  <th>Amistoso; 22 de abril de 1928</th>
+                  <td>España</td>
+                  <td>1:1 (1:0)</td>
+                  <td>Italia</td>
+                </tr>
+                <tr>
+                  <th>Amistoso; 29 de marzo de 1978</th>
+                  <td>España</td>
+                  <td>3:0 (2:0)</td>
+                  <td>Noruega</td>
+                </tr>
+                <tr>
+                  <th>Amistoso; 16 de abril de 1980</th>
+                  <td>España</td>
+                  <td>2:2 (0:1)</td>
+                  <td>Checoslovaquia</td>
+                </tr>
+                <tr>
+                  <th>Amistoso; 24 de septiembre de 1986</th>
+                  <td>España</td>
+                  <td>3:1 (2:0)</td>
+                  <td>Grecia</td>
+                </tr>
+                <tr>
+                  <th>Amistoso; 12 de septiembre de 1990</th>
+                  <td>España</td>
+                  <td>3:0 (1:0)</td>
+                  <td>Brasil</td>
+                </tr>
+                <tr>
+                  <th>Clasif. Copa Mundial de 1998; 11 de octubre de 1997</th>
+                  <td>España</td>
+                  <td>3:1 (2:1)</td>
+                  <td>Islas Feroe</td>
+                </tr>
+                <tr>
+                  <th>Amistoso; 31 de marzo de 2004</th>
+                  <td>España</td>
+                  <td>2:0 (1:0)</td>
+                  <td>Dinamarca</td>
+                </tr>
+                <tr>
+                  <th>Amistoso; 17 de agosto de 2005</th>
+                  <td>España</td>
+                  <td>2:0 (2:0)</td>
+                  <td>Uruguay</td>
+                </tr>
+                <tr>
+                  <th>Clasif. Copa Mundial de 2014; 22 de marzo de 2013</th>
+                  <td>España</td>
+                  <td>1:1 (0:0)</td>
+                  <td>Finlandia</td>
+                </tr>
+                <tr>
+                  <th>Clasif. Copa Mundial de 2018; 24 de marzo de 2017</th>
+                  <td>España</td>
+                  <td>4:1 (2:0)</td>
+                  <td>Israel</td>
+                </tr>
+                <tr>
+                  <th>Clasif. Eurocopa 2020; 8 de septiembre de 2019</th>
+                  <td>España</td>
+                  <td>4:0 (1:0)</td>
+                  <td>Islas Feroe</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article id="mundial">
+            <h3>Copa Mundial de 1982</h3>
+            <p>Gijón fue una de las catorce subsedes y El Molinón uno de los diecisiete estadios que albergaron la Copa Mundial de 1982. Con motivo del evento, se elevaron con tribunas superpuestas las gradas este y sur, que situaron el aforo en torno a 45 000 espectadores. En este recinto se disputaron tres partidos del grupo 2 durante la primera fase del campeonato.
+            </p>
+            <table id="tabla1">
+              <tbody>
+                <tr>
+                  <th>Copa Mundial de Fútbol de 1982; 16 de junio de 1982</th>
+                  <td>Alemania Federal</td>
+                  <td>1:2 (0:0)</td>
+                  <td>Argelia</td>
+                </tr>
+                <tr>
+                  <th>Copa Mundial de Fútbol de 1982; 20 de junio de 1982</th>
+                  <td>Alemania Federal</td>
+                  <td>4:1 (1:0)</td>
+                  <td>Chile</td>
+                </tr>
+                <tr>
+                  <th>Copa Mundial de Fútbol de 1982; 25 de junio de 1982 </th>
+                  <td>Alemania Federal</td>
+                  <td>1:0 (1:0)</td>
+                  <td>Austria</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+
+        <!-- SECCION 4-->
+        <section>
+          <h2>Conciertos</h2>
+
+          <article id="conciertos">
+            <p>
+              El estadio El Molinón ha albergado, además de acontecimientos deportivos, todo tipo de conciertos entre los que cabe destacar:
+            </p>
+            <ul>
+              <li>Tina Turner (1990)</li>
+              <li>Sting (1991)</li>
+              <li>Dire Straits (1992)</li>
+              <li>Bruce Springsteen (1993, 2003, 2013)</li>
+              <li>The Rolling Stones (1995)</li>
+              <li>Bon Jovi (1996)</li>
+              <li>Paul McCartney (2004)</li>
+              <li>Artistas nacionales como: Vetusta Morla, IZAL, Love of Lesbian, Alejandro Sanz, Víctor Manuel, Miguel Ríos o Joan Manuel Serrat.</li>
+            </ul>
+          </article>
+        </section>
+        <!-- SECCION 5-->
+        <section>
+          <h2>Bajos comerciales</h2>
+
+          <article id="bajos">
+            <p>
+              Los bajos comerciales del estadio son explotados por la empresa Molinón Espacio Urbano S.L. El ayuntamiento de Gijón, propietario del estadio desde 1935, adjudicó el contrato de concesión administrativa del proyecto de uso y explotación de los locales en septiembre de 2006 por un periodo de 40 años, prorrogables a 60, a la sociedad Ruta de El Molinón, y en junio de 2009 el gobierno de Paz Fernández Felgueroso ejecuta la resolución del contrato tras hacer dos requerimientos a Ruta de El Molinón sobre los incumplimientos de plazos y obras comprometidas en su proyecto. El proyecto pasa a manos de Proyectos, Construcciones e Interiorismo, S.A. (PROCOIN), que en 2015 vende el 80% de su participación a Santa Gadea, S.A., a través de Molinón Espacio Urbano S.L., y en 2018 el 20% restante. En 2019 Santa Gadea, S.A. vende Molinón Espacio Urbano S.L. a los propietarios de Cafento SLU (anteriormente denominada Cafés El Gallego S.L.).
+            </p>
+          </article>
+        </section>
+
+        <!-- BOTÓN VOLVER INICIO -->
+        <a href="#" class="top">&#8593; Volver al Inicio de la Pagina &#8593;</a>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <br>
+    <address> &copy; El autor de esta página web ha sido Fermín Jiménez Muñoz</address>
+    <address>La última modificación tuvo lugar el 17/02/2023</address>
+  </footer>
+
+</body>
+</html>
